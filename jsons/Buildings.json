@@ -407,7 +407,7 @@
 		"Unavailable <in [Capital] cities> <hidden from users>",
 		"Suppress warning [unique \"ConvertFilter]",
 	],
-	"requiredTech": "Theology"
+	"requiredTech": "Calendar"
 	},
 
 	{
@@ -426,7 +426,7 @@
 			"ConvertFilter <hidden from users>", //<Suppress warning [(Building) Fanatic Converts's unique \"ConvertFilter <hidden from users>]>\"
 			"Suppress warning [unique \"ConvertFilter]",
 		],
-		"requiredTech": "Theology"
+		"requiredTech": "Calendar"
 	},
 
     {
