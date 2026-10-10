@@ -1,0 +1,46 @@
+[
+
+    {
+        "name": "Ziema's Disappearance",
+        "text": "My dreams are still haunted by the night we lost Ziema Adya.\n\nThree days from the mountains, shadowy figures descended upon us. We thought them bandits. We were wrong. They did not come to rob us or kill us—they came for Ziema.\n\nShe fought fiercely, saving many of our lives, but in the chaos they seized her. Some of our most experienced warriors vanished with her.\n\nFor years I have wondered who took her, and why. Now we have found traces of them here, in these wild lands.\n\nI will find Ziema.\n\nAnd I will have my vengeance on those who stole her away.",
+        "presentation": "Alert",
+        "choices": [
+            {
+                "text": "Begin the search",
+                "uniques": []
+            }
+        ]
+    },
+
+
+    {
+        "name": "Ziema's Awakening",
+        "text": "Your search has finally led you to a Forgotten warrior. She calls herself Ziema Adya. She offers her service, but in what capacity?",
+        "presentation": "Alert",
+        "choices": [
+            {
+                "text": "Recruit her as an Infiltrator",
+                "uniques": [
+                    "Set [ziema_searches] to [10] <hidden from users>",
+                    "Gain an extra spy"
+                ]
+            },
+            {
+                "text": "Recruit her as a Leader",
+                "uniques": [
+                    "Set [ziema_searches] to [10] <hidden from users>",
+                    "Free [Great General] appears"
+                ]
+            },
+            {
+                "text": "Recruit her as a Soldier",
+                "uniques": [
+                    "Set [ziema_searches] to [10] <hidden from users>",
+                    "Free [Ziema Adya] appears"
+                ]
+            }
+        ]
+    }
+
+
+]

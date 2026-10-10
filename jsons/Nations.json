@@ -485,12 +485,13 @@
 				"Remove [Liberty] and refund [100]% of its cost <upon adopting [Liberty]> <when below [10] [prevent_ai_liberty_loop]> <hidden from users>",
 				"Instantly gain [1] [prevent_ai_liberty_loop] <upon adopting [Liberty]> <for [AI player] Civilizations> <hidden from users>",
 			"May buy items in puppet cities",
-
+			// "Provides [1] [Converts] <for every [[{Foreign} {in cities following our religion}] Cities]> <every [1] turns>",
+			// "Provides [1] [Converts] <for every [[in cities following our religion] Cities of [All] Civilizations]> <every [1] turns>",
+			// city checkfilter "in cities following our religion"
 			"[+10]% [Faith] <for every [[{Holy} {Puppeted}] Cities]>",
 			"Comment [Cities are razed twice as fast and yield 3 [Resource Stockpile] per turn.]",
 				"Instantly gain [3] [Resource Stockpile] <upon turn end> <for every [[in cities being razed] Cities]> <hidden from users>",
 				"Cities are razed [2] times as fast <hidden from users>",
-
 			"Comment [ ]",
 			"Comment [Military units can found Puppet cities on [Barbarian encampments] and [City ruins]]",
 				"[Military] units gain the [Zealot] promotion <hidden from users>",
@@ -557,10 +558,10 @@
 			"Comment [No Science is produced]",
 			"Comment [Technologies can be bought out with Gold]",
 			"Comment [Sources of Science gives Gold instead]",
-
 			"Receive [+200]% Gold from Barbarian encampments and pillaging Cities",
-			"No movement cost to pillage <for [Land] units>",
 			"Gain an extra spy <upon discovering [Agriculture] technology>",
+			//"No movement cost to pillage <for [Land] units>",
+			"All newly-trained [Land] units [in all cities] receive the [Pillagers] promotion",
 			"All newly-trained [Scout] units [in all cities] receive the [From the Shadows] promotion",
 			"[+1 Gold] per [1] population [in all cities] <hidden from users>",
 
@@ -571,6 +572,10 @@
 
 		//	"May buy [buildingFilter] buildings with [stat] [cityFilter]",
 			//"May buy [Technology Building] buildings with [Faith] for [2] times their normal Production cost",
+
+			// Ziema Quest
+			"Comment [Can find Ziema Adya by completing a quest]",
+				"Triggers a [Ziema's Disappearance] event <upon turn start> <after turn number [1]> <before turn number [2]> <hidden from users>",
 
 
 			"[+1 Gold] per [2] population [in all cities] <in cities with a [Library]> <for [Human player] Civilizations><hidden from users>",

@@ -20,28 +20,6 @@
 			"[This Unit] gains the [Indoctrination] promotion <upon entering a [Barbarian encampment] tile>",
 		]
 	},
-
-	{
-		"name": "Indoctrination",
-		"uniques": [
-			"Comment [Pillage or initiate the remnants of an encampment]",
-			"Founds a new puppet city",
-			//"[This Unit] loses the [Indoctrination] promotion <for [0] movement>", //<upon losing the [promotion] status> unittriggercondition
-			"Instantly gain [1] [Resource Stockpile] <for [0] movement> <removing the [Indoctrination] promotion/status>", // Not a cost <removing the [promotion] promotion/status>
-			"Cannot move"
-		]
-	},
-
-	{
-		"name": "Chosen One",
-		"uniques": ["[+50]% XP gained from combat", "[This Unit] heals [5] HP <upon losing at least [20] HP in a single attack>", "[+1] Movement"]
-	},
-
-	{
-		"name": "From the Shadows",
-		"uniques": ["Invisible to non-adjacent units","May enter foreign tiles without open borders"]
-	},
-
 	{
 		"name": "Rapid Mutation",
 		"uniques": ["May heal outside of friendly territory","[+5] HP when healing <in [Foreign Land] tiles>","All healing effects doubled"]
@@ -87,5 +65,180 @@
 			"[+2] Movement",
 		]
 	},
+	// Forgotten
+
+
+		{
+			"name": "Indoctrination",
+			"uniques": [
+				"Comment [Pillage or initiate the remnants of an encampment]",
+				"Founds a new puppet city",
+				//"[This Unit] loses the [Indoctrination] promotion <for [0] movement>", //<upon losing the [promotion] status> unittriggercondition
+				"Instantly gain [1] [Resource Stockpile] <for [0] movement> <removing the [Indoctrination] promotion/status>", // Not a cost <removing the [promotion] promotion/status>
+				"Instantly gain [1] [Resource Stockpile] <upon losing the [Indoctrination] status> <on [Quick] game speed>", // Not a cost <removing the [promotion] promotion/status>
+				"Cannot move"
+			]
+		},
+
+		{
+			"name": "Chosen One",
+			"uniques": ["[+50]% XP gained from combat", "[This Unit] heals [5] HP <upon losing at least [20] HP in a single attack>", "[+1] Movement"]
+		},
+
+		{
+			"name": "From the Shadows",
+			"uniques": ["Invisible to non-adjacent units","May enter foreign tiles without open borders"]
+		},
+
+		{
+			"name": "Pillagers",
+			"uniques": [
+				"No movement cost to pillage",
+				"Instantly gain [1] [ziema_searches] <upon entering a [Barbarian encampment] tile> <hidden from users>",
+
+				"[This Unit] gains [3] movement <upon entering a [all] tile>",
+				"Triggers a [Ziema's Awakening] event <upon entering a [Barbarian encampment] tile> <when between [1] and [1] [ziema_searches]> <with [33]% chance><hidden from users>",
+				"Triggers a [Ziema's Awakening] event <upon entering a [Barbarian encampment] tile> <when between [2] and [2] [ziema_searches]> <with [50]% chance><hidden from users>",
+				"Triggers a [Ziema's Awakening] event <upon entering a [Barbarian encampment] tile> <when between [3] and [5] [ziema_searches]> <hidden from users>",
+			]
+		},
+// Ziema Adya
+
+    // CAMOUFLAGE
+    {
+        "name": "Camouflage I",
+        "unitTypes": ["Ziema Adya"],
+        "uniques": [
+            "[+20]% Strength <vs [Ranged] units> <when defending> <when fighting in [Rough terrain] tiles>",
+            "[+20]% Strength <when attacking> <when fighting in [Rough terrain] tiles>"
+        ]
+    },
+    {
+        "name": "Camouflage II",
+        "prerequisites": ["Camouflage I"],
+        "unitTypes": ["Ziema Adya"],
+        "uniques": [
+            "[+20]% Strength <vs [Ranged] units> <when defending> <when fighting in [Rough terrain] tiles>",
+            "[+20]% Strength <when attacking> <when fighting in [Rough terrain] tiles>"
+        ]
+    },
+    {
+        "name": "Camouflage III",
+        "prerequisites": ["Camouflage II"],
+        "unitTypes": ["Ziema Adya"],
+        "uniques": [
+            "[+20]% Strength <vs [Ranged] units> <when defending> <when fighting in [Rough terrain] tiles>",
+            "[+20]% Strength <when attacking> <when fighting in [Rough terrain] tiles>"
+        ]
+    },
+    {
+        "name": "Terrain Mastery",
+        "prerequisites": ["Camouflage III"],
+        "unitTypes": ["Ziema Adya"],
+        "uniques": [
+            "Ignores terrain cost"
+        ]
+    },
+
+    // INFILTRATION
+    {
+        "name": "Shadowstep I",
+        "unitTypes": ["Ziema Adya"],
+        "uniques": [
+            "[+1] Movement"
+        ]
+    },
+    {
+        "name": "Shadowstep II",
+        "prerequisites": ["Shadowstep I"],
+        "unitTypes": ["Ziema Adya"],
+        "uniques": [
+            "[+1] Movement"
+        ]
+    },
+    {
+        "name": "Shadowstep III",
+        "prerequisites": ["Shadowstep II"],
+        "unitTypes": ["Ziema Adya"],
+        "uniques": [
+            "Can move after attacking"
+        ]
+    },
+    {
+        "name": "Shadow Passage",
+        "prerequisites": ["Shadowstep III"],
+        "unitTypes": ["Ziema Adya"],
+        "uniques": [
+            "Ignores Zone of Control"
+        ]
+    },
+
+    // EXECUTIONER
+    {
+        "name": "Executioner I",
+        "unitTypes": ["Ziema Adya"],
+        "uniques": [
+            "[+15]% Strength <vs [Wounded] units>"
+        ]
+    },
+    {
+        "name": "Executioner II",
+        "prerequisites": ["Executioner I"],
+        "unitTypes": ["Ziema Adya"],
+        "uniques": [
+            "[+15]% Strength <vs [Wounded] units>"
+        ]
+    },
+    {
+        "name": "Executioner III",
+        "prerequisites": ["Executioner II"],
+        "unitTypes": ["Ziema Adya"],
+        "uniques": [
+            "[+15]% Strength <vs [Wounded] units>"
+        ]
+    },
+    {
+        "name": "Blood Rush",
+        "prerequisites": ["Executioner III"],
+        "unitTypes": ["Ziema Adya"],
+        "uniques": [
+            "[This Unit] gains [2] movement <upon defeating a [Military] unit>"
+        ]
+    },
+
+    // TALENTS
+    {
+        "name": "Assassination",
+        "prerequisites": ["Camouflage II"],
+        "unitTypes": ["Ziema Adya"],
+        "uniques": [
+            "[+50]% Strength <vs [Ranged] units> <when attacking>"
+        ]
+    },
+    {
+        "name": "Saboteur",
+        "prerequisites": ["Shadowstep II"],
+        "unitTypes": ["Ziema Adya"],
+        "uniques": [
+            "[+50]% Strength <vs [Siege] units> <when attacking>"
+        ]
+    },
+    {
+        "name": "Withdraw",
+        "prerequisites": ["Shadowstep II"],
+        "unitTypes": ["Ziema Adya"],
+        "uniques": [
+            "Withdraws before melee combat <with [50]% chance>"
+        ]
+    },
+    {
+        "name": "Pillager",
+        "prerequisites": ["Shadowstep II"],
+        "unitTypes": ["Ziema Adya"],
+        "uniques": [
+            "[+50]% Yield from pillaging tiles"
+        ]
+    }
+
 
 ]

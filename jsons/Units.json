@@ -441,6 +441,36 @@
 		"attackSound": "crossbow"
 	},
 
+	{
+		"name": "Ziema Adya",
+		"unitType": "Sword",
+		"strength": 10,
+		"cost": 2,
+		"movement": 3,
+		"uniqueTo": "Forgotten",
+		"promotions": ["From the Shadows", "Chosen One"],
+		"uniques": [
+			"Unbuildable",
+			"Can transform to [Ziema Adya (refit)] <with [0] priority>",
+			"[+1] Strength <for every [1.0*[Era number]*[Era number] + 3*[Era number]]>",
+		],
+	},
+
+		{
+		"name": "Ziema Adya (refit)",
+		"unitType": "Ziema Adya",
+		"strength": 10,
+		"cost": 2,
+		"movement": 3,
+		"uniqueTo": "Forgotten",
+		"promotions": ["From the Shadows", "Chosen One"],
+		"uniques": [
+			"Unbuildable",
+			"Can transform to [Ziema Adya]",
+			"[+1] Strength <for every [1.0*[Era number]*[Era number] + 3*[Era number]]>",
+		],
+	},
+
 	// Allayi
 	{
 		"name": "Skyfin",
@@ -531,7 +561,7 @@
 		"unitType": "Civilian",
 		"uniqueTo": "Mykara",
 		"replaces": "Settler",
-		"movement": 2,
+		"movement": 200,
 		"cost": 106,
 		"requiredTech": "Agriculture",
 		"hurryCostModifier": 35,
@@ -545,7 +575,9 @@
 
 		"Comment [Can instantly construct a Fungal Bloom improvement for 2 movement 3 times, after which this unit is consumed]",
 		"Can instantly construct a [Fungal Bloom] improvement <for [2] movement> <[3] times> <after which this unit is consumed> <if [Mykara Palace] is constructed> <hidden from users>",
-
+		"Gain a free [Library] [in this city]  <for [2] movement> <[3] times> <in cities without a [Library]>",
+		"Gain a free [Barracks] [in this city]  <for [2] movement> <[3] times> <in cities without a [Barracks]>",
+		"Gain a free [University] [in this city]  <for [2] movement> <[3] times> <in [Capital] cities>",
 		"Comment [Costs 167% more production but gains +2 movement and +5 spreads starting from the Industrial era]",
 			"[+167]% production cost <starting from the [Industrial era]> <hidden from users>",
 
