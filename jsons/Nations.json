@@ -80,17 +80,18 @@
 		"innerColor": [102,178,255],
 		"uniqueName": "Appetite for Dust",
 		"uniques": [
-			"Comment [No natural growth in all cities]",
 			"Comment [Population grows by building or buying them in cities]",
 			"Comment [Sources of Food gives Gold instead]",
 			"Comment [Growth bonuses gives relative Gold instead]",
 
 			"[+1 Gold] from every [resource] <for [AI player] Civilizations><hidden from users>",
 
-			"Nullifies Growth [in all cities] <for [Human player] Civilizations><hidden from users>",
-			"[+1000 Food] [in all cities]",
-			"[-100]% [Food] from every [Terrain] <for [Human player] Civilizations><hidden from users>",
-			"[-100]% [Food] from every [Improvement] <for [Human player] Civilizations><hidden from users>",
+			"Comment [No natural growth in all cities]",
+				"Nullifies Growth [in all cities] <for [Human player] Civilizations><hidden from users>",
+				"[+2 Food] per [1] population [in all cities] <for [Human player] Civilizations><hidden from users>",
+				//"[+2 Food] [in all cities] <for [Human player] Civilizations> <hidden from users>",
+				"[-100]% [Food] from every [Terrain] <for [Human player] Civilizations><hidden from users>",
+				"[-100]% [Food] from every [Improvement] <for [Human player] Civilizations><hidden from users>",
 
 			"[+2 Gold] from every [Granary] <for [Human player] Civilizations><hidden from users>",
 			"[+2 Gold] from every [Water Mill] <for [Human player] Civilizations><hidden from users>",
@@ -142,6 +143,7 @@
 			"[+10]% [Gold] [in capital]<after adopting [Landed Elite]> <for [Human player] Civilizations><hidden from users>",
 			"[+2 Gold] [in capital]<after adopting [Landed Elite]> <for [Human player] Civilizations><hidden from users>",
 			"[+15]% [Gold] [in all cities]<after adopting [Tradition Complete]> <for [Human player] Civilizations><hidden from users>",
+			"[+15]% [Gold] [in all cities] <in cities with a [Swords into Ploughshares] religion> <when not at war> <for [Human player] Civilizations><hidden from users>",
 			"[+2 Gold] [in all cities]<after adopting [Order]> <for [Human player] Civilizations><hidden from users>"
 		],
 		"cities": ["Hwilhet-On-Arewe", "Valdaea", "Nolaran", "O'Irenth", "Worimer", "Lionith", "Trenwin", "Shadonn", "Aberian", "Ran'dare", "Dardogar", "Candray", "Yerian", "Holcaj", "Tsoth", "Ralian", "Awniss", "Janeldass", "Sormel", "Taldreen", "Ightohin", "Rayit", "Relian", "Wistred", "Sulet", "Ovoru", "Sam-hin", "Ersay", "Emoroya", "Halethby", "Caquag", "Etmess"]
