@@ -448,23 +448,25 @@
 		"cost": 2,
 		"movement": 3,
 		"uniqueTo": "Forgotten",
-		"promotions": ["From the Shadows", "Chosen One"],
+		"promotions": ["From the Shadows"],
 		"uniques": [
+			"[This Unit] gains [5] XP <upon defeating a [Military] unit>",
 			"Unbuildable",
 			"Can transform to [Ziema Adya (refit)] <with [0] priority>",
 			"[+1] Strength <for every [1.0*[Era number]*[Era number] + 3*[Era number]]>",
 		],
 	},
 
-		{
+	{
 		"name": "Ziema Adya (refit)",
 		"unitType": "Ziema Adya",
 		"strength": 10,
 		"cost": 2,
 		"movement": 3,
 		"uniqueTo": "Forgotten",
-		"promotions": ["From the Shadows", "Chosen One"],
+		"promotions": ["From the Shadows"],
 		"uniques": [
+			"[This Unit] gains [5] XP <upon defeating a [Military] unit>",
 			"Unbuildable",
 			"Can transform to [Ziema Adya]",
 			"[+1] Strength <for every [1.0*[Era number]*[Era number] + 3*[Era number]]>",

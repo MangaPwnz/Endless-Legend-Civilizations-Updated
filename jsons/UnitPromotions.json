@@ -96,14 +96,13 @@
 				"No movement cost to pillage",
 				"Instantly gain [1] [ziema_searches] <upon entering a [Barbarian encampment] tile> <hidden from users>",
 
-				"[This Unit] gains [3] movement <upon entering a [all] tile>",
+				//"[This Unit] gains [3] movement <upon entering a [all] tile>",
 				"Triggers a [Ziema's Awakening] event <upon entering a [Barbarian encampment] tile> <when between [1] and [1] [ziema_searches]> <with [33]% chance><hidden from users>",
 				"Triggers a [Ziema's Awakening] event <upon entering a [Barbarian encampment] tile> <when between [2] and [2] [ziema_searches]> <with [50]% chance><hidden from users>",
 				"Triggers a [Ziema's Awakening] event <upon entering a [Barbarian encampment] tile> <when between [3] and [5] [ziema_searches]> <hidden from users>",
 			]
 		},
 // Ziema Adya
-
     // CAMOUFLAGE
     {
         "name": "Camouflage I",
@@ -124,7 +123,7 @@
     },
     {
         "name": "Camouflage III",
-        "prerequisites": ["Camouflage II"],
+        "prerequisites": ["Camouflage II", "Shadowstep II", "Executioner II"],
         "unitTypes": ["Ziema Adya"],
         "uniques": [
             "[+20]% Strength <vs [Ranged] units> <when defending> <when fighting in [Rough terrain] tiles>",
@@ -135,67 +134,54 @@
         "name": "Terrain Mastery",
         "prerequisites": ["Camouflage III"],
         "unitTypes": ["Ziema Adya"],
-        "uniques": [
-            "Ignores terrain cost"
-        ]
+        "uniques": ["Ignores terrain cost"]
     },
 
-    // INFILTRATION
+    // SHADOWSTEP
     {
         "name": "Shadowstep I",
         "unitTypes": ["Ziema Adya"],
-        "uniques": [
-            "[+1] Movement"
-        ]
+        "uniques": ["[+1] Movement"]
     },
     {
         "name": "Shadowstep II",
         "prerequisites": ["Shadowstep I"],
         "unitTypes": ["Ziema Adya"],
-        "uniques": [
-            "[+1] Movement"
-        ]
+        "uniques": ["Can move after attacking"]
     },
     {
         "name": "Shadowstep III",
-        "prerequisites": ["Shadowstep II"],
+        "prerequisites": ["Shadowstep II", "Camouflage II", "Executioner II"],
         "unitTypes": ["Ziema Adya"],
-        "uniques": [
-            "Can move after attacking"
-        ]
+        "uniques": ["[+1] Movement"]
     },
     {
         "name": "Shadow Passage",
         "prerequisites": ["Shadowstep III"],
         "unitTypes": ["Ziema Adya"],
-        "uniques": [
-            "Ignores Zone of Control"
-        ]
+        "uniques": ["Ignores Zone of Control"]
     },
 
     // EXECUTIONER
     {
         "name": "Executioner I",
         "unitTypes": ["Ziema Adya"],
-        "uniques": [
-            "[+15]% Strength <vs [Wounded] units>"
-        ]
+        "uniques": ["[+15]% Strength <vs [Wounded] units>"]
     },
     {
         "name": "Executioner II",
         "prerequisites": ["Executioner I"],
         "unitTypes": ["Ziema Adya"],
         "uniques": [
-            "[+15]% Strength <vs [Wounded] units>"
+            "[+15]% Strength <vs [Wounded] units>",
+
         ]
     },
     {
         "name": "Executioner III",
-        "prerequisites": ["Executioner II"],
+        "prerequisites": ["Executioner II", "Camouflage II", "Shadowstep II"],
         "unitTypes": ["Ziema Adya"],
-        "uniques": [
-            "[+15]% Strength <vs [Wounded] units>"
-        ]
+        "uniques": ["[+15]% Strength <vs [Wounded] units>"]
     },
     {
         "name": "Blood Rush",
@@ -211,34 +197,26 @@
         "name": "Assassination",
         "prerequisites": ["Camouflage II"],
         "unitTypes": ["Ziema Adya"],
-        "uniques": [
-            "[+50]% Strength <vs [Ranged] units> <when attacking>"
-        ]
+        "uniques": ["[+50]% Strength <vs [Ranged] units> <when attacking>"]
     },
     {
         "name": "Saboteur",
         "prerequisites": ["Shadowstep II"],
         "unitTypes": ["Ziema Adya"],
-        "uniques": [
-            "[+50]% Strength <vs [Siege] units> <when attacking>"
-        ]
+        "uniques": ["[+50]% Strength <vs [Siege] units> <when attacking>"]
     },
     {
         "name": "Withdraw",
         "prerequisites": ["Shadowstep II"],
         "unitTypes": ["Ziema Adya"],
-        "uniques": [
-            "Withdraws before melee combat <with [50]% chance>"
-        ]
+        "uniques": ["Withdraws before melee combat <with [60]% chance>"]
     },
     {
         "name": "Pillager",
         "prerequisites": ["Shadowstep II"],
         "unitTypes": ["Ziema Adya"],
-        "uniques": [
-            "[+50]% Yield from pillaging tiles"
-        ]
-    }
+        "uniques": ["[+50]% Yield from pillaging tiles"]
+    },
 
 
 ]
