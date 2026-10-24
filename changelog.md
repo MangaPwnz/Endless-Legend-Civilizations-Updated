@@ -80,3 +80,12 @@ Forgotten:
 Cultists:
 - Buff: Now unlocks their "Converts" UB at Calendar instead of Theology
 - Buff: "Converts" building cost reduced by 25%
+- Buff: Gains additional benefits from the Honor tree
+- Buff: Gains additional benefits from Piety tree
+- Converted Villages can now grow their borders
+- Stockpiles also give a flat bonus regardless of era
+
+Nerfs:
+- Stockpile gain from razing cities: 3 per turn -> 2 per turn
+- Fanatic Converts faith gain nerfed. Gaining an extra founder belief is locked behind Piety.
+- Fix: Converted Villages giving starving warnings despite being at 1 population
