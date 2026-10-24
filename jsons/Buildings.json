@@ -437,8 +437,8 @@
         "name": "Industry Stockpiles",
         "uniqueTo": "Cult of the Eternal End",
         "cost": 0,
-		"production": 10,
         "uniques": [
+			"[+10 Production] <when above [0] [Resource Stockpile]>",
             "Comment [[+12 Production] × Era (modified by game speed). Consumes 1 [Resource Stockpile] per turn; automatically removed when depleted.]",
             "Instantly consumes [1] [Resource Stockpile] <when above [0] [Resource Stockpile]> <upon turn start> <hidden from users>",
             "[+36 Production] <on [Marathon] game speed> <when above [0] [Resource Stockpile]> <for every [[Era number] + 1]> <hidden from users>",
@@ -455,8 +455,8 @@
         "name": "Food Stockpiles",
         "uniqueTo": "Cult of the Eternal End",
         "cost": 0,
-		"food": 15,
         "uniques": [
+			"[+15 Food] <when above [0] [Resource Stockpile]>",
             "Comment [[+16 Food] × Era (modified by game speed). Consumes 1 [Resource Stockpile] per turn; automatically removed when depleted.]",
             "Instantly consumes [1] [Resource Stockpile] <when above [0] [Resource Stockpile]> <upon turn start> <hidden from users>",
             "[+48 Food] <on [Marathon] game speed> <when above [0] [Resource Stockpile]> <for every [[Era number] + 1]> <hidden from users>",
@@ -473,8 +473,8 @@
         "name": "Science Stockpiles",
         "uniqueTo": "Cult of the Eternal End",
         "cost": 0,
-		"science": 30,
         "uniques": [
+			"[+30 Science] <when above [0] [Resource Stockpile]>",
             "Comment [[+25 Science] × Era (modified by game speed). Consumes 1 [Resource Stockpile] per turn; automatically removed when depleted.]",
             "Instantly consumes [1] [Resource Stockpile] <when above [0] [Resource Stockpile]> <upon turn start> <hidden from users>",
             "[+75 Science] <on [Marathon] game speed> <when above [0] [Resource Stockpile]> <for every [[Era number] + 1]> <hidden from users>",
