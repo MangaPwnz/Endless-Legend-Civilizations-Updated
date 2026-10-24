@@ -489,8 +489,8 @@
 			"May buy items in puppet cities",
 
 		// STOCKPILES & CONVERTS
-			"Comment [Cities are razed twice as fast and yield 3 [Resource Stockpile] per turn.]",
-			"Instantly gain [3] [Resource Stockpile] <upon turn end> <for every [[in cities being razed] Cities]> <hidden from users>",
+			"Comment [Cities are razed twice as fast and yield 2 [Resource Stockpile] per turn.]",
+			"Instantly gain [2] [Resource Stockpile] <upon turn end> <for every [[in cities being razed] Cities]> <hidden from users>",
 			"Cities are razed [2] times as fast <hidden from users>",
 			"Comment [ ]",
 			"Comment [Military units can found Puppet cities on [Barbarian encampments] and [City ruins]]",
