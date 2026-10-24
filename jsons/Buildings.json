@@ -403,6 +403,8 @@
 		"Provides [3] [Converts] <every [1] turns>",
 		"Provides [1] [Converts] <every [1] turns> <after adopting [Warrior Code]>",
 		"[-4 Happiness]",
+
+		"Comment [ ]",
 		"Unavailable <in cities with a [Fanatic Converts]>",
 		"Destroyed when the city is captured",
 
@@ -420,9 +422,12 @@
 		"cost": 100,
 		"hurryCostModifier": -25,
 		"uniques": [
-			"Comment [Gain +1/+2/+3 [Faith] per 2 population in the capital after building 2/4/6 [Fanatic Converts]]", // Real effect in nations.json
-			"Comment [Gain 1 additional Founder belief after building 8 [Fanatic Converts] (once)]", // Real effect in nations.json
+			"[+1 Faith] <after adopting [Organized Religion]>",
+			"Comment [-25% cost after adopting [Piety]]", // Real effect in nations.json
+			"Comment [Capital gains +1/+2/+3 [Faith] per 2 population after building 1/3/10 [Fanatic Converts]]", // Real effect in nations.json
+			"Comment [Gain 1 additional Founder belief after building 6 [Fanatic Converts] if you have adopted [Free Religion]]", // Real effect in nations.json
 
+			"Comment [ ]",
 			"Unavailable <in cities with a [\"Willing\" Converts]>",
 			"Destroyed when the city is captured",
 

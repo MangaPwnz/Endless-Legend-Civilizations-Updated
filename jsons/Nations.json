@@ -479,7 +479,7 @@
 		"innerColor": [64,64,64],
 		"uniqueName": "High Seat of the Queen",
 		"uniques": [
-			// One city stuff
+		// One city stuff
 			"Comment [Cannot gain settlers nor annex cities]",
 				"Cannot build [Settler] units <hidden from users>",
 				"May not annex cities <hidden from users>",
@@ -487,27 +487,34 @@
 				"Remove [Liberty] and refund [100]% of its cost <upon adopting [Liberty]> <when below [10] [prevent_ai_liberty_loop]> <hidden from users>",
 				"Instantly gain [1] [prevent_ai_liberty_loop] <upon adopting [Liberty]> <for [AI player] Civilizations> <hidden from users>",
 			"May buy items in puppet cities",
-			// "Provides [1] [Converts] <for every [[{Foreign} {in cities following our religion}] Cities]> <every [1] turns>",
-			// "Provides [1] [Converts] <for every [[in cities following our religion] Cities of [All] Civilizations]> <every [1] turns>",
-			// city checkfilter "in cities following our religion"
-			"[+10]% [Faith] <for every [[{Holy} {Puppeted}] Cities]>",
+
+		// STOCKPILES & CONVERTS
 			"Comment [Cities are razed twice as fast and yield 3 [Resource Stockpile] per turn.]",
-				"Instantly gain [3] [Resource Stockpile] <upon turn end> <for every [[in cities being razed] Cities]> <hidden from users>",
-				"Cities are razed [2] times as fast <hidden from users>",
+			"Instantly gain [3] [Resource Stockpile] <upon turn end> <for every [[in cities being razed] Cities]> <hidden from users>",
+			"Cities are razed [2] times as fast <hidden from users>",
 			"Comment [ ]",
 			"Comment [Military units can found Puppet cities on [Barbarian encampments] and [City ruins]]",
 				"[Military] units gain the [Zealot] promotion <hidden from users>",
-			//"[+1 Faith] per [2] population [in capital]",
 			//"Comment [Any puppeted city becomes a [Converted village]. Removing all yields but giving free [Converts]]",
 				"Gain a free [Converted village] [in puppeted cities]",
 			"Comment [Can use [Converts] to buy units from the [Warrior] path]",
-			// Hidden
-				"[-15]% Strength for cities <in cities with a [Converted village]> <hidden from users>",
-				"[+1 Faith] per [2] population [in capital] <if [Fanatic Converts] is constructed in at least [2] of [Puppeted] cities> <hidden from users>",
-				"[+1 Faith] per [2] population [in capital] <if [Fanatic Converts] is constructed in at least [4] of [Puppeted] cities> <hidden from users>",
-				"[+1 Faith] per [2] population [in capital] <if [Fanatic Converts] is constructed in at least [6] of [Puppeted] cities> <hidden from users>",
-				"Gain a free [Founder] belief <if [Fanatic Converts] is constructed in at least [8] of [Puppeted] cities> <upon turn end> <when between [0] and [0] [cultist_founder_bool]> <hidden from users>",
-				"Instantly gain [1] [cultist_founder_bool] <if [Fanatic Converts] is constructed in at least [8] of [Puppeted] cities> <upon turn start> <when between [0] and [0] [cultist_founder_bool]> <hidden from users>",
+
+		// FAITH
+			"[+10]% [Faith] <for every [[{Holy} {Puppeted}] Cities]>",
+			//"[+1 Faith] per [2] population [in capital]",
+			"Comment [Adopting [Theocracy] provides 1 [Converts]/turn per 1/3/6/10/... foreign cities following your religion]",
+				"Provides [1] [Converts] <for every [floor( (sqrt(1 + 8*[[non-[in cities following our religion]] Cities of [non-[Cult of the Eternal End]] Civilizations]) - 1) /2)  ]> <every [1] turns> <after adopting [Theocracy]> <hidden from users>", // VERY ODD: "in cities following our religion" returns the OPPOSITE values for other civilizations than your own (false if follows, true if they don't follow it).
+					// Formula: Converts = floor( (sqrt(1 + 8*ForeignCities) - 1) /2)
+					// Where ForeignCities = [[non-[in cities following our religion]] Cities of [non-[Cult of the Eternal End]] Civilizations]
+		// HIDDEN (description in another place)
+			"[-15]% Strength for cities <in cities with a [Converted village]> <hidden from users>",
+		// Fanatic Converts
+			"[Gold] cost of purchasing [Fanatic Converts] buildings [-25]% <after adopting [Piety]> <hidden from users>",
+			"[+1 Faith] per [2] population [in capital] <if [Fanatic Converts] is constructed in at least [1] of [Puppeted] cities> <hidden from users>",
+			"[+1 Faith] per [2] population [in capital] <if [Fanatic Converts] is constructed in at least [3] of [Puppeted] cities> <hidden from users>",
+			"[+1 Faith] per [2] population [in capital] <if [Fanatic Converts] is constructed in at least [10] of [Puppeted] cities> <hidden from users>",
+			"Gain a free [Founder] belief <if [Fanatic Converts] is constructed in at least [6] of [Puppeted] cities> <upon turn end> <after adopting [Free Religion]> <when between [0] and [0] [cultist_founder_bool]> <hidden from users>",
+			"Instantly gain [1] [cultist_founder_bool] <if [Fanatic Converts] is constructed in at least [6] of [Puppeted] cities> <upon turn start> <when between [0] and [0] [cultist_founder_bool]> <hidden from users>",
 
 
 		],
