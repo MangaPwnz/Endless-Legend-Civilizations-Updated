@@ -1,0 +1,166 @@
+diff --git a/TODO.md b/TODO.md
+index 5819473..659286c 100644
+--- a/TODO.md
++++ b/TODO.md
+@@ -17,33 +17,15 @@ Upload:
+ - Update descriptions
+ - Upload mod so it's visible
+ - Make a forum thread
+-# Roving Clans (Good for now)
+-
+-## Make Trade - Not War
+-- Done for now
++# Roving Clans
++Bug: Can't build Hermitage
+ 
+ # Mykara (Good for now)
+-Add great general thing? Adds incentive to go to war. but cumbersome, and maybe impossible.
+-Too much micro late? **SOLVED - Settlers are more expensive but gains more charges late game**
+-    - Seems hard to make them automate **SCRAPPED**
+-    - Maybe make aoe? **IMPOSSIBLE**
+-    - Maybe give workers ability to build it? Might not work either though since they give negative resources. **Unsure**
+-    - Reduce number of spreads but give more support for increasing yields instead? **NOT YET**§
+-
+ Make giga buildings which improve yields?
+ But might not be needed, since there's actually a pseudo-viable route of taking cities
+ 
+ # Cultists
+-Buffs:
+-- Add custom Stockpile resource
+-- Give it on razing cities
+-- Add use Food/Industry/Science stockpile buildings for 0 which can be use in capital.
+-- Stronger replacement?
+-    - Auto build it?
+-Nerfs:
+-- Extra upkeep for each puppeted city
+-    - (flat or increasing?)
+-    - non-capital only or all?
+-    - Remove religion bonuses?
+-    -
+-- Remove buying capabilities in puppeted cities? Or not?
+\ No newline at end of file
++Buff early game by giving 1 Faith / 2 pop back. Or by giving a +1 faith in capital.
++
++#
++
+diff --git a/bugs.md b/bugs.md
+index 7bcf9ba..f8e2e90 100644
+--- a/bugs.md
++++ b/bugs.md
+@@ -3,4 +3,51 @@
+ - Unbuildable - "Blocks from being built, possibly by conditional. However it can still appear in the menu and be bought with other means such as Gold or Faith." Yet it disables buying thing with gold or faith.
+ - Neither "Costs [2] [Culture] per turn" nor "Costs [2] [Culture] per turn when in your territory" does anything on Fungal Bloom
+ - Stale link in https://yairm210.github.io/Unciv/Modders/Mods/: https://github.com/yairm210/Unciv-mod-example/blob/master/Removing%20Things/jsons/ModOptions.json The master branch of Unciv-mod-example does not contain the path Removing Things/jsons/ModOptions.json.
+-- Gaining a Great Prophet does not complete the city state quest for it if you consume it the same turn you get it.
+\ No newline at end of file
++- Gaining a Great Prophet does not complete the city state quest for it if you consume it the same turn you get it.
++
++
++- AI won't purchase unbuildable buildings? at least not this. It will build it if  <for [Human player] Civilizations>is added.
++    {
++        "name": "Willing Convert - Warrior",
++        "uniqueTo": "Cult of the Eternal End",
++        "cost": 0,
++        "uniques": [
++            "Costs [90] [Converts] <(modified by game speed)>",
++            "Can be purchased for [0] [Gold] [in all cities]",
++            "Free [Warrior] appears",
++            "Only available <before discovering [Civil Service]>",
++			"[+5 Production] <for [AI player] Civilizations> <hidden from users>",
++            "Unbuildable <hidden from users>",
++            "Shown while unbuilable <before discovering [Civil Service]>",
++            "Will not be displayed in Civilopedia",
++            "ConvertFilter <hidden from users>",
++            "Suppress warning [unique \"ConvertFilter]",
++
++            "Remove [Willing Convert - Warrior] [in this city] <hidden from users>"
++        ]
++    },
++
++
++### Forgotten and Gold costs
++- `Cost increases by [amount] per owned city does not affect purchase cost.` Maybe intentional, but might want to add it to the documentation
++- `May buy [Technology Building] buildings with [Faith] for [2] times their normal Production cost` IS affected by purchase cost
++- `Can be purchased with [Gold] [in all cities]` scales with production, and does increase per owned city. But adding `Unbuildable` drops it's cost from 230 Gold to 30 Gold, and 60 to 0 Faith on quick (presumably production cost = 0 base +5*0.67 from 1 city). Basically: This unique IS affected by the flat exttra build cost, but Unbuildable seems to drop its base cost to 0.
++    - Actually, it works properly when explicitly setting the `cost: 100` field. It seems like Unbuildable just removes the autodetect from tech functionality
++
++	{
++		"name": "Buy Animal Husbandry",
++		"uniqueTo": "Forgotten",
++		"maintenance": 0,
++        "hurryCostModifier": 50,
++        "uniques": [
++			"Unsellable", "Unbuildable", "Cannot be purchased<for [AI player] Civilizations>",
++			"Can be purchased with [Gold] [in all cities]", // This scales with production
++			"Will not be displayed in Civilopedia",
++			"Technology Building",
++			"Remove [Technology Building] [in all cities]<after turn number [1]>",
++			"Cost increases by [5] per owned city",
++			"Discover [Animal Husbandry]",
++			"Only available <before discovering [Animal Husbandry]>"
++			],
++        "requiredTech": "Agriculture"
++    },
+\ No newline at end of file
+diff --git a/changelog.md b/changelog.md
+index e7259e7..9a3848e 100644
+--- a/changelog.md
++++ b/changelog.md
+@@ -69,6 +69,14 @@ Mykara - Mycelial network:
+ - no longer increases maintenance cost of roads/railroads
+ 
+ ## V1.1.4
++Bugfixes:
+ - Fix Personalities overflowing on the starting screen for some civs
+ - Fix Broken Lords losing population from starvation every turn
+-- Fix all Forgotten techs cost a constant 200 gold
+\ No newline at end of file
++
++Forgotten:
++- Rebalance tech cost. All techs no longer cost a constant 200 gold.
++-
++
++Cultists:
++- Buff: Now unlocks their "Converts" UB at Calendar instead of Theology
++- Buff: "Converts" building cost reduced by 25%
+diff --git a/jsons/Buildings.json b/jsons/Buildings.json
+index b6f622e..ef14021 100644
+--- a/jsons/Buildings.json
++++ b/jsons/Buildings.json
+@@ -369,8 +369,7 @@
+ 	"culture": 1.5,
+ 	"uniques": [
+ 		"Provides [3] [Converts] <every [1] turns>",
+-		//"Provides [1] [Converts] <every [1] turns> <starting from the [Modern era]>",
+-		//"[+2 Happiness] <before the [Modern era]>",
++		"[+1 Happiness] <after adopting [Military Caste]>",
+ 		"Comment [-15% City Strength]",
+ 		"Instantly gain [60] [Converts] <(modified by game speed)>",
+ 
+@@ -397,8 +396,10 @@
+ 	"uniqueTo": "Cult of the Eternal End",
+ 	"requiredBuilding": "Converted village",
+ 	"cost": 100,
++	"hurryCostModifier": -25,
+ 	"uniques": [
+ 		"Provides [3] [Converts] <every [1] turns>",
++		"Provides [1] [Converts] <every [1] turns> <after adopting [Warrior Code]>",
+ 		"[-4 Happiness]",
+ 		"Unavailable <in cities with a [Fanatic Converts]>",
+ 		"Destroyed when the city is captured",
+@@ -415,6 +416,7 @@
+ 		"uniqueTo": "Cult of the Eternal End",
+ 		"requiredBuilding": "Converted village",
+ 		"cost": 100,
++		"hurryCostModifier": -25,
+ 		"uniques": [
+ 			"Comment [Gain +1/+2/+3 [Faith] per 2 population in the capital after building 2/4/6 [Fanatic Converts]]", // Real effect in nations.json
+ 			"Comment [Gain 1 additional Founder belief after building 8 [Fanatic Converts] (once)]", // Real effect in nations.json
+@@ -1820,7 +1822,6 @@
+ 			"Remove [Technology Building] [in all cities]<after turn number [1]>",
+ 			"Cost increases by [25] per owned city",
+ 			"Discover [Metal Casting]",
+-			"Only available <before discovering [Engineering]>",
+ 			"Only available <after discovering [Iron Working]>"
+ 			],
+         "requiredTech": "Engineering"

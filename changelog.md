@@ -69,6 +69,14 @@ Mykara - Mycelial network:
 - no longer increases maintenance cost of roads/railroads
 
 ## V1.1.4
+Bugfixes:
 - Fix Personalities overflowing on the starting screen for some civs
 - Fix Broken Lords losing population from starvation every turn
-- Fix all Forgotten techs cost a constant 200 gold
+
+Forgotten:
+- Rebalance tech cost. All techs no longer cost a constant 200 gold.
+-
+
+Cultists:
+- Buff: Now unlocks their "Converts" UB at Calendar instead of Theology
+- Buff: "Converts" building cost reduced by 25%
