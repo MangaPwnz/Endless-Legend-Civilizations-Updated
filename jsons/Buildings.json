@@ -369,8 +369,7 @@
 	"culture": 1.5,
 	"uniques": [
 		"Provides [3] [Converts] <every [1] turns>",
-		//"Provides [1] [Converts] <every [1] turns> <starting from the [Modern era]>",
-		//"[+2 Happiness] <before the [Modern era]>",
+		"[+1 Happiness] <after adopting [Military Caste]>",
 		"Comment [-15% City Strength]",
 		"Instantly gain [60] [Converts] <(modified by game speed)>",
 
@@ -397,8 +396,10 @@
 	"uniqueTo": "Cult of the Eternal End",
 	"requiredBuilding": "Converted village",
 	"cost": 100,
+	"hurryCostModifier": -25,
 	"uniques": [
 		"Provides [3] [Converts] <every [1] turns>",
+		"Provides [1] [Converts] <every [1] turns> <after adopting [Warrior Code]>",
 		"[-4 Happiness]",
 		"Unavailable <in cities with a [Fanatic Converts]>",
 		"Destroyed when the city is captured",
@@ -415,6 +416,7 @@
 		"uniqueTo": "Cult of the Eternal End",
 		"requiredBuilding": "Converted village",
 		"cost": 100,
+		"hurryCostModifier": -25,
 		"uniques": [
 			"Comment [Gain +1/+2/+3 [Faith] per 2 population in the capital after building 2/4/6 [Fanatic Converts]]", // Real effect in nations.json
 			"Comment [Gain 1 additional Founder belief after building 8 [Fanatic Converts] (once)]", // Real effect in nations.json
@@ -1820,7 +1822,6 @@
 			"Remove [Technology Building] [in all cities]<after turn number [1]>",
 			"Cost increases by [25] per owned city",
 			"Discover [Metal Casting]",
-			"Only available <before discovering [Engineering]>",
 			"Only available <after discovering [Iron Working]>"
 			],
         "requiredTech": "Engineering"
