@@ -75,17 +75,26 @@ Bugfixes:
 
 Forgotten:
 - Rebalance tech cost. All techs no longer cost a constant 200 gold.
--
+- Add a small quest to gain Ziema Adya, a hero unit with her own promotion tree
 
 Cultists:
-- Buff: Now unlocks their "Converts" UB at Calendar instead of Theology
-- Buff: "Converts" building cost reduced by 25%
-- Buff: Gains additional benefits from the Honor tree
-- Buff: Gains additional benefits from Piety tree
-- Converted Villages can now grow their borders
-- Stockpiles also give a flat bonus regardless of era
+    Buffs:
+    - Add start bias Avoid Tundra, Avoid Snow.
+    - Now unlocks their "Converts" UB at Calendar instead of Theology
+    - Converted village gives 1 Happiness, resulting in a net -3 Happiness per new city founded.
+    - "Willing Converts" building cost reduced by 25%
+    - "Willing Converts" gives -3 Happiness (from -4)
+    - Gains additional benefits from the Honor tree
+    - Gains additional benefits from Piety tree
+    - Converted Villages can now grow their borders
 
-Nerfs:
-- Stockpile gain from razing cities: 3 per turn -> 2 per turn
-- Fanatic Converts faith gain nerfed. Gaining an extra founder belief is locked behind Piety.
-- Fix: Converted Villages giving starving warnings despite being at 1 population
+    Other:
+    - Rebalanced Stockpiles. Production and Science Stockpiles also give a flat bonus regardless of era.
+    - Fanatic Converts: gives more Faith early, but less late. Gaining an extra founder belief is locked behind Piety
+    - Fix: Converted Villages giving starving warnings despite being at 1 population
+    - Fix: Could previously buy any building in a Puppeted city the first turn.
+
+    Nerfs:
+    - Stockpile gain from razing cities: 3 per turn -> 2 per turn
+    - Removed bonus Faith from conquering Holy Cities
+    - Fanatic Converts now reduces happiness by 3

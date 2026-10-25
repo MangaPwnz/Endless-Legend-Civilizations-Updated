@@ -563,7 +563,7 @@
 		"unitType": "Civilian",
 		"uniqueTo": "Mykara",
 		"replaces": "Settler",
-		"movement": 200,
+		"movement": 2,
 		"cost": 106,
 		"requiredTech": "Agriculture",
 		"hurryCostModifier": 35,
@@ -575,11 +575,9 @@
 		// Unique
 		"Cost increases by [10] when built",
 
-		"Comment [Can instantly construct a Fungal Bloom improvement for 2 movement 3 times, after which this unit is consumed]",
+		"Comment [Can instantly construct a [Fungal Bloom] improvement for 2 movement 3 times, after which this unit is consumed]",
 		"Can instantly construct a [Fungal Bloom] improvement <for [2] movement> <[3] times> <after which this unit is consumed> <if [Mykara Palace] is constructed> <hidden from users>",
-		"Gain a free [Library] [in this city]  <for [2] movement> <[3] times> <in cities without a [Library]>",
-		"Gain a free [Barracks] [in this city]  <for [2] movement> <[3] times> <in cities without a [Barracks]>",
-		"Gain a free [University] [in this city]  <for [2] movement> <[3] times> <in [Capital] cities>",
+
 		"Comment [Costs 167% more production but gains +2 movement and +5 spreads starting from the Industrial era]",
 			"[+167]% production cost <starting from the [Industrial era]> <hidden from users>",
 
