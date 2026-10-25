@@ -369,12 +369,11 @@
 	"culture": 1.5,
 	"uniques": [
 		"Provides [3] [Converts] <every [1] turns>",
-		"[+1 Happiness] <after adopting [Military Caste]>",
+		"[+1 Happiness]",
 		"Comment [-15% City Strength]",
 		"Instantly gain [60] [Converts] <(modified by game speed)>",
 
-		"Comment [Can only build Military, Defensive, and Convert buildings]",
-			"Cannot build [{non-[Barracks]} {non-[Armory]} {non-[Walls]} {non-[Castle]} {non-[ConvertFilter]}] buildings <in [Puppeted] cities> <hidden from users>",
+		"Comment [Can only build Military, Defensive, and Convert buildings]", // Implemented in nations
 		"Comment [City yields nullified, except [Culture]]",
 			"[+3 Food] <hidden from users>",
 			"[-100]% [Food] [in this city] <in cities with at least [2] [Population]> <hidden from users>",
@@ -402,7 +401,8 @@
 	"uniques": [
 		"Provides [3] [Converts] <every [1] turns>",
 		"Provides [1] [Converts] <every [1] turns> <after adopting [Warrior Code]>",
-		"[-4 Happiness]",
+		"[-3 Happiness]",
+		"[+1 Happiness] <after adopting [Military Caste]>",
 
 		"Comment [ ]",
 		"Unavailable <in cities with a [Fanatic Converts]>",
@@ -420,10 +420,11 @@
 		"uniqueTo": "Cult of the Eternal End",
 		"requiredBuilding": "Converted village",
 		"cost": 100,
-		"hurryCostModifier": -25,
+		"hurryCostModifier": 0,
 		"uniques": [
-			"[+1 Faith] <after adopting [Organized Religion]>",
-			"Comment [-25% cost after adopting [Piety]]", // Real effect in nations.json
+			"[-3 Happiness]",
+			"[+1 Happiness] <after adopting [Organized Religion]>",
+			//"Comment [This costs 50% less after adopting [Piety]]", // Real effect in nations.json
 			"Comment [Capital gains +1/+2/+3 [Faith] per 2 population after building 1/3/10 [Fanatic Converts]]", // Real effect in nations.json
 			"Comment [Gain 1 additional Founder belief after building 6 [Fanatic Converts] if you have adopted [Free Religion]]", // Real effect in nations.json
 
@@ -443,13 +444,13 @@
         "uniqueTo": "Cult of the Eternal End",
         "cost": 0,
         "uniques": [
-			"[+10 Production] <when above [0] [Resource Stockpile]>",
-            "Comment [[+12 Production] × Era (modified by game speed). Consumes 1 [Resource Stockpile] per turn; automatically removed when depleted.]",
+			"[+15 Production] <when above [0] [Resource Stockpile]>",
+            "Comment [[+8 Production] × Era (modified by game speed). Consumes 1 [Resource Stockpile] per turn; automatically removed when depleted.]",
             "Instantly consumes [1] [Resource Stockpile] <when above [0] [Resource Stockpile]> <upon turn start> <hidden from users>",
-            "[+36 Production] <on [Marathon] game speed> <when above [0] [Resource Stockpile]> <for every [[Era number] + 1]> <hidden from users>",
-            "[+18 Production] <on [Epic] game speed> <when above [0] [Resource Stockpile]> <for every [[Era number] + 1]> <hidden from users>",
-            "[+12 Production] <on [Standard] game speed> <when above [0] [Resource Stockpile]> <for every [[Era number] + 1]> <hidden from users>",
-            "[+8 Production] <on [Quick] game speed> <when above [0] [Resource Stockpile]> <for every [[Era number] + 1]> <hidden from users>",
+            "[+24 Production] <on [Marathon] game speed> <when above [0] [Resource Stockpile]> <for every [[Era number] + 1]> <hidden from users>",
+            "[+12 Production] <on [Epic] game speed> <when above [0] [Resource Stockpile]> <for every [[Era number] + 1]> <hidden from users>",
+            "[+8 Production] <on [Standard] game speed> <when above [0] [Resource Stockpile]> <for every [[Era number] + 1]> <hidden from users>",
+            "[+5 Production] <on [Quick] game speed> <when above [0] [Resource Stockpile]> <for every [[Era number] + 1]> <hidden from users>",
             "Destroyed when the city is captured <hidden from users>",
             "Only available <when above [0] [Resource Stockpile]> <hidden from users>",
             "Remove [Industry Stockpiles] [Capital]  <upon turn end> <when below [1] [Resource Stockpile]> <hidden from users>"
@@ -461,8 +462,8 @@
         "uniqueTo": "Cult of the Eternal End",
         "cost": 0,
         "uniques": [
-			"[+15 Food] <when above [0] [Resource Stockpile]>",
-            "Comment [[+16 Food] × Era (modified by game speed). Consumes 1 [Resource Stockpile] per turn; automatically removed when depleted.]",
+			//"[+15 Food] <when above [0] [Resource Stockpile]>",
+            "Comment [[+20 Food] × Era (modified by game speed). Consumes 1 [Resource Stockpile] per turn; automatically removed when depleted.]",
             "Instantly consumes [1] [Resource Stockpile] <when above [0] [Resource Stockpile]> <upon turn start> <hidden from users>",
             "[+48 Food] <on [Marathon] game speed> <when above [0] [Resource Stockpile]> <for every [[Era number] + 1]> <hidden from users>",
             "[+24 Food] <on [Epic] game speed> <when above [0] [Resource Stockpile]> <for every [[Era number] + 1]> <hidden from users>",
@@ -482,10 +483,10 @@
 			"[+30 Science] <when above [0] [Resource Stockpile]>",
             "Comment [[+25 Science] × Era (modified by game speed). Consumes 1 [Resource Stockpile] per turn; automatically removed when depleted.]",
             "Instantly consumes [1] [Resource Stockpile] <when above [0] [Resource Stockpile]> <upon turn start> <hidden from users>",
-            "[+75 Science] <on [Marathon] game speed> <when above [0] [Resource Stockpile]> <for every [[Era number] + 1]> <hidden from users>",
-            "[+38 Science] <on [Epic] game speed> <when above [0] [Resource Stockpile]> <for every [[Era number] + 1]> <hidden from users>",
-            "[+25 Science] <on [Standard] game speed> <when above [0] [Resource Stockpile]> <for every [[Era number] + 1]> <hidden from users>",
-            "[+17 Science] <on [Quick] game speed> <when above [0] [Resource Stockpile]> <for every [[Era number] + 1]> <hidden from users>",
+            "[+60 Science] <on [Marathon] game speed> <when above [0] [Resource Stockpile]> <for every [[Era number] + 1]> <hidden from users>",
+            "[+30 Science] <on [Epic] game speed> <when above [0] [Resource Stockpile]> <for every [[Era number] + 1]> <hidden from users>",
+            "[+20 Science] <on [Standard] game speed> <when above [0] [Resource Stockpile]> <for every [[Era number] + 1]> <hidden from users>",
+            "[+13 Science] <on [Quick] game speed> <when above [0] [Resource Stockpile]> <for every [[Era number] + 1]> <hidden from users>",
             "Destroyed when the city is captured <hidden from users>",
             "Only available <when above [0] [Resource Stockpile]> <hidden from users>",
             "Remove [Science Stockpiles] [Capital]  <upon turn end> <when below [1] [Resource Stockpile]> <hidden from users>"
