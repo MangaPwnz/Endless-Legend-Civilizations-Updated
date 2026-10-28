@@ -399,6 +399,7 @@
 	"cost": 100,
 	"hurryCostModifier": -25,
 	"uniques": [
+		"Comment [Only available in Puppet cities]",
 		"Provides [3] [Converts] <every [1] turns>",
 		"Provides [1] [Converts] <every [1] turns> <after adopting [Warrior Code]>",
 		"[-3 Happiness]",
@@ -422,6 +423,7 @@
 		"cost": 100,
 		"hurryCostModifier": 0,
 		"uniques": [
+			"Comment [Only available in Puppet cities]",
 			"[-3 Happiness]",
 			"[+1 Happiness] <after adopting [Organized Religion]>",
 			//"Comment [This costs 50% less after adopting [Piety]]", // Real effect in nations.json
