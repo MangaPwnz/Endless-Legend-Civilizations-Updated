@@ -16,8 +16,9 @@
 	{
 		"name": "Zealot",
 		"uniques": [
-			"Founds a new puppet city <in [City ruins] tiles>",
+			"Founds a new puppet city <in [City ruins] tiles> <by consuming this unit>",
 			"[This Unit] gains the [Indoctrination] promotion <upon entering a [Barbarian encampment] tile>",
+            "Comment [Indoctrination can be used to found a city or gain a [Resource Stockpile]]",
 		]
 	},
 	{
