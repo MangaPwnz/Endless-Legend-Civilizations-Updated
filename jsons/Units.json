@@ -425,53 +425,77 @@
 	// },
 
 	// Forgotten
+	// {
+	// 	"name": "Predatore",
+	// 	"unitType": "Archery",
+	// 	"uniqueTo": "Forgotten",
+	// 	"replaces": "Crossbowman",
+	// 	"movement": 2,
+	// 	"strength": 15,
+	// 	"rangedStrength": 20,
+	// 	"cost": 120,
+	// 	"requiredTech": "Machinery",
+	// 	"promotions": ["From the Shadows"],
+	// 	"upgradesTo": "Gatling Gun",
+	// 	"obsoleteTech": "Industrialization",
+	// 	"attackSound": "crossbow"
+	// },
+	// Forgotten
 	{
-		"name": "Predatore",
-		"unitType": "Archery",
+		"name": "Myst",
+		"unitType": "Scout",
+		"replaces": "Horseman",
 		"uniqueTo": "Forgotten",
-		"replaces": "Crossbowman",
-		"movement": 2,
-		"strength": 15,
-		"rangedStrength": 20,
-		"cost": 120,
-		"requiredTech": "Machinery",
-		"promotions": ["From the Shadows"],
-		"upgradesTo": "Gatling Gun",
-		"obsoleteTech": "Industrialization",
-		"attackSound": "crossbow"
+		"movement": 4,
+		"strength": 12,
+		"cost": 85,
+		"requiredTech": "Horseback Riding",
+		"obsoleteTech": "Chivalry",
+		//"requiredResource": "Horses",
+		"upgradesTo": "Knight",
+		"uniques": [
+			//"Can move after attacking",
+			"[-33]% Strength <vs cities> <when attacking>",
+			"Ignores terrain cost",
+			//"[This unit] gains the [Mist Form] status for [3] turn(s) <for units without [Cooldown]>",
+			//"No defensive terrain bonus"
+	],
+		//"promotions": ["From the Shadows"],
+		"attackSound": "metalhit"
 	},
 
-	{
-		"name": "Ziema Adya",
-		"unitType": "Sword",
-		"strength": 10,
-		"cost": 2,
-		"movement": 3,
-		"uniqueTo": "Forgotten",
-		"promotions": ["From the Shadows"],
-		"uniques": [
-			"[This Unit] gains [5] XP <upon defeating a [Military] unit>",
-			"Unbuildable",
-			"Can transform to [Ziema Adya (refit)] <with [0] priority>",
-			"[+1] Strength <for every [1.0*[Era number]*[Era number] + 3*[Era number]]>",
-		],
-	},
 
-	{
-		"name": "Ziema Adya (refit)",
-		"unitType": "Ziema Adya",
-		"strength": 10,
-		"cost": 2,
-		"movement": 3,
-		"uniqueTo": "Forgotten",
-		"promotions": ["From the Shadows"],
-		"uniques": [
-			"[This Unit] gains [5] XP <upon defeating a [Military] unit>",
-			"Unbuildable",
-			"Can transform to [Ziema Adya]",
-			"[+1] Strength <for every [1.0*[Era number]*[Era number] + 3*[Era number]]>",
-		],
-	},
+	// {
+	// 	"name": "Ziema Adya",
+	// 	"unitType": "Sword",
+	// 	"strength": 10,
+	// 	"cost": 2,
+	// 	"movement": 3,
+	// 	"uniqueTo": "Forgotten",
+	// 	"promotions": ["From the Shadows"],
+	// 	"uniques": [
+	// 		"[This Unit] gains [5] XP <upon defeating a [Military] unit>",
+	// 		"Unbuildable",
+	// 		"Can transform to [Ziema Adya (refit)] <with [0] priority>",
+	// 		"[+1] Strength <for every [1.0*[Era number]*[Era number] + 3*[Era number]]>",
+	// 	],
+	// },
+
+	// {
+	// 	"name": "Ziema Adya (refit)",
+	// 	"unitType": "Ziema Adya",
+	// 	"strength": 10,
+	// 	"cost": 2,
+	// 	"movement": 3,
+	// 	"uniqueTo": "Forgotten",
+	// 	"promotions": ["From the Shadows"],
+	// 	"uniques": [
+	// 		"[This Unit] gains [5] XP <upon defeating a [Military] unit>",
+	// 		"Unbuildable",
+	// 		"Can transform to [Ziema Adya]",
+	// 		"[+1] Strength <for every [1.0*[Era number]*[Era number] + 3*[Era number]]>",
+	// 	],
+	// },
 
 	// Allayi
 	{

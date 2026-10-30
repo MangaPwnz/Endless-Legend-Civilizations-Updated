@@ -36,7 +36,7 @@
                 "text": "Recruit her as a Soldier",
                 "uniques": [
                     "Set [ziema_searches] to [10] <hidden from users>",
-                    "Free [Ziema Adya] appears"
+                   // "Free [Ziema Adya] appears"
                 ]
             }
         ]
