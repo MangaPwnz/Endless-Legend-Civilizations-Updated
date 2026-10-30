@@ -88,14 +88,21 @@
 
 		{
 			"name": "From the Shadows",
-			"uniques": ["Invisible to non-adjacent units","May enter foreign tiles without open borders"]
+			"uniques": ["Invisible to non-adjacent units",
+            "May enter foreign tiles without open borders",
+            // "Comment [May build a [Smuggler's Cave] once in City-States. Gains [20 Gold] when building it.]",
+                // "Gain a free [Smuggler's Cave] [in this city] <costs [-20 Gold] stats> <for [0] movement> <in [non-[Forgotten]] tiles> <[1] times> <hidden from users>", //<in [City-State] tiles>
+            "Can instantly construct a [Information Brokers] improvement <for [4] movement> <once>",// <[1] times> <in [{Major} {non-[Forgotten]}] tiles>",
+             //"[This Unit] gains the [Shock I] status for [3] turn(s) <for [0] movement>",
+        ]
 		},
 
 		{
 			"name": "Pillagers",
 			"uniques": [
-				"No movement cost to pillage",
-				"Instantly gain [1] [ziema_searches] <upon entering a [Barbarian encampment] tile> <hidden from users>",
+				//"No movement cost to pillage",
+                "[+100]% Yield from pillaging tiles",
+				//"Instantly gain [1] [ziema_searches] <upon entering a [Barbarian encampment] tile> <hidden from users>",
 
 				//"[This Unit] gains [3] movement <upon entering a [all] tile>",
 				"Triggers a [Ziema's Awakening] event <upon entering a [Barbarian encampment] tile> <when between [1] and [1] [ziema_searches]> <with [33]% chance><hidden from users>",

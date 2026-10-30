@@ -236,6 +236,38 @@
 		"uniques": ["[+1 Gold] <after discovering [Economics]>", "Pillaging this improvement yields approximately [+20 Gold]"],
 		"shortcutKey": "T"
 	},
+// Forgotten
+	{
+		"name": "Information Brokers",
+		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Forest","Jungle","Flood plains","Barren Soil","Ash Drifts","Basalt Plains","Lava Swirl","Badlands","Scorched Wilds"],
+		"science": 3,
+		"turnsToBuild": 7,
+		"uniqueTo": "Forgotten",
+		"techRequired": "Agriculture",
+		"uniques": [
+			//"[+1 Science] <for every [Era number]>",
+		//"Unbuildable",
+			"Pillaging this improvement yields approximately [+20 Gold]",
+			"Pillaging this improvement yields approximately [+5 Gold] <for every [Era number]>",
+			//"Instantly gain [1000] [Gold]", // Triggered uniques work! Trigger onbuild
+			//"Can only be built on [{non-[Forgotten]} {non-[Great Improvement]} {Major}] tiles",
+			"Unbuildable <within [2] tiles of a [Information Brokers]>",
+			"Unbuildable <within [2] tiles of a [Information Brokers (Pillaged!)]>",
+			"Cannot be built on [resource] tiles",
+			"Tile provides yield without assigned population",
+
+			//"Only available <in cities with a [Library]>", Doesn't work
+			"Can be built outside your borders <hidden from users>",
+			"Unavailable <for [Worker] units> <hidden from users>",
+			"Does not need removal of [Forest] <hidden from users>",
+			"Does not need removal of [Jungle] <hidden from users>",
+	]
+	 	,
+		"shortcutKey": "T"
+	},
+
+// Mykara
+
 {
     "name": "Fungal Bloom",
     "terrainsCanBeBuiltOn": ["Land"],
