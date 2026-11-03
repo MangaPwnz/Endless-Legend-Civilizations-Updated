@@ -90,9 +90,10 @@
 			"name": "From the Shadows",
 			"uniques": ["Invisible to non-adjacent units",
             "May enter foreign tiles without open borders",
+            "Can build [Information Brokers] improvements on tiles",
             // "Comment [May build a [Smuggler's Cave] once in City-States. Gains [20 Gold] when building it.]",
                 // "Gain a free [Smuggler's Cave] [in this city] <costs [-20 Gold] stats> <for [0] movement> <in [non-[Forgotten]] tiles> <[1] times> <hidden from users>", //<in [City-State] tiles>
-            "Can instantly construct a [Information Brokers] improvement <for [4] movement> <once>",// <[1] times> <in [{Major} {non-[Forgotten]}] tiles>",
+            //"Can instantly construct a [Information Brokers] improvement <for [4] movement> <once>",// <[1] times> <in [{Major} {non-[Forgotten]}] tiles>",
              //"[This Unit] gains the [Shock I] status for [3] turn(s) <for [0] movement>",
         ]
 		},

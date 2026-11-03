@@ -702,8 +702,8 @@
 			"Free Technology",
 			"Cost increases by [30] per owned city",
 			//"New spies start with [1] level(s)",
-			"Gain an extra spy",
-			"[+25]% spy effectiveness [in all cities]",
+			//"Gain an extra spy",
+			"[+35]% spy effectiveness [in all cities]",
 		],
 		"requiredTech": "Education"
 	},

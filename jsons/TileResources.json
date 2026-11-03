@@ -508,30 +508,69 @@
 			"Not shown on world screen"
 		]
 	},
-	{ //TEST
+	{
 
-		"name": "smuggled_gold",
+		"name": "Inflitration",
 		"resourceType": "Strategic",
 		"uniques": [
 			"Stockpiled",
 			"Cannot be traded",
 			"Doesn't generate naturally",
 			//"Excluded from map editor",
-			//"Will not be displayed in Civilopedia",
-			//"Not shown on world screen"
+			"Will not be displayed in Civilopedia <for [non-[Forgotten]] Civilizations>",
+			"Not shown on world screen <for [non-[Forgotten]] Civilizations>"
+		]
+	},
+	{
+		"name": "spy_gain",
+		"resourceType": "Strategic",
+		"uniques": [
+			"Stockpiled",
+			"Cannot be traded",
+			"Doesn't generate naturally",
+			//"Excluded from map editor",
+			"Will not be displayed in Civilopedia <for [non-[Forgotten]] Civilizations>",
+			"Not shown on world screen <for [non-[Forgotten]] Civilizations>"
 		]
 	},
 	{ //TEST
 
-		"name": "techno_gold",
+		"name": "total_civ_gold",
 		"resourceType": "Strategic",
 		"uniques": [
 			"Stockpiled",
 			"Cannot be traded",
 			"Doesn't generate naturally",
 			//"Excluded from map editor",
-			//"Will not be displayed in Civilopedia",
-			//"Not shown on world screen"
+			"Will not be displayed in Civilopedia <for [non-[Forgotten]] Civilizations>",
+			"Not shown on world screen <for [non-[Forgotten]] Civilizations>"
+		]
+	},
+
+	{ //TEST
+
+		"name": "total_civ_gold",
+		"resourceType": "Strategic",
+		"uniques": [
+			"Stockpiled",
+			"Cannot be traded",
+			"Doesn't generate naturally",
+			//"Excluded from map editor",
+			"Will not be displayed in Civilopedia <for [non-[Forgotten]] Civilizations>",
+			"Not shown on world screen <for [non-[Forgotten]] Civilizations>"
+		]
+	},
+	{ //TEST
+
+		"name": "total_techno_gold",
+		"resourceType": "Strategic",
+		"uniques": [
+			"Stockpiled",
+			"Cannot be traded",
+			"Doesn't generate naturally",
+			//"Excluded from map editor",
+			"Will not be displayed in Civilopedia <for [non-[Forgotten]] Civilizations>",
+			"Not shown on world screen <for [non-[Forgotten]] Civilizations>"
 		]
 	},
 

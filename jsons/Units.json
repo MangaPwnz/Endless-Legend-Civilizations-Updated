@@ -448,9 +448,9 @@
 		"uniqueTo": "Forgotten",
 		"movement": 4,
 		"strength": 12,
-		"cost": 85,
+		"cost": 75,
 		"requiredTech": "Horseback Riding",
-		"obsoleteTech": "Chivalry",
+		//"obsoleteTech": "Chivalry",
 		//"requiredResource": "Horses",
 		"upgradesTo": "Knight",
 		"uniques": [
