@@ -218,6 +218,7 @@
         "name": "Caravanserai",
         "replaces": "Market",
         "uniqueTo": "Roving Traders",
+			"specialistSlots": {"Merchant": 1},
         "requiredTech": "Currency",
         // "cost": 11,
         "gold": 0,
@@ -231,6 +232,7 @@
         "replaces": "Bank",
 		"requiredBuilding": "Market",
         "uniqueTo": "Roving Traders",
+		"specialistSlots": {"Merchant": 1},
         "requiredTech": "Banking",
         // "cost": 11,
         "uniques": [
@@ -243,25 +245,30 @@
         "replaces": "Amphitheater",
         "uniqueTo": "Roving Traders",
         "requiredTech": "Drama and Poetry",
+		"specialistSlots": {"Artist": 1},
         "cost": 75,
         "maintenance": 2,
         "culture": 0,
         "uniques": [
+			"Comment [No effect in capital (it has no trade routes)]",
+			//"Unavailable <in [Capital] cities>",
             "[+2 Culture] from each Trade Route <in this city>",
 			//"Unbuildable",
-			"Unavailable <in [Capital] cities>",
         ]
     },
 	{
-        "name": "Bardic Schools", //TODO change name
+        "name": "Bardic Academy", //TODO change name
         "replaces": "Opera House",
         "uniqueTo": "Roving Traders",
 		"requiredBuilding": "Amphitheater",
         "requiredTech": "Acoustics",
+		"specialistSlots": {"Artist": 1},
         // "cost": 11,
         "maintenance": 6,
         "culture": 0,
         "uniques": [
+			"Academy",
+			"[+10]% maintenance cost for [Academy] buildings [in all cities]",
             "[+2 Culture] from each Trade Route <when number of [Trade Embargo] is less than [1]>",
         ]
     },
@@ -273,7 +280,8 @@
         "maintenance": 1,
         // "cost": 11,
         "uniques": [
-			"Unavailable <in [Capital] cities>",
+			//"Unavailable <in [Capital] cities>",
+			"Comment [No effect in capital (it has no trade routes)]",
             "[+2 Science] from each Trade Route <in this city>",
             "[+1 Science] from each Trade Route <in this city> <starting from the [Medieval era]> <when number of [Trade Embargo] is less than [1]>",
         ]
@@ -282,12 +290,16 @@
         "name": "Network Academy",
         "replaces": "University",
         "uniqueTo": "Roving Traders",
+		"requiredBuilding": "Library",
         "requiredTech": "Education",
+		"specialistSlots": {"Scientist": 2},
 		"maintenance": 4,
         // "cost": 11,
         "uniques": [
+			"Academy",
+			"[+10]% maintenance cost for [Academy] buildings [in all cities]",
+            "[+1 Science] from each Trade Route <when number of [Trade Embargo] is less than [1]>",
             "[+10]% [Science] from Trade Routes <when number of [Trade Embargo] is less than [1]>",
-            "[+1 Science] from each Trade Route <when number of [Trade Embargo] is less than [1]>"
         ]
     },
 

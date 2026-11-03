@@ -357,7 +357,11 @@
 		"obsoleteTech": "Military Science",
 		"upgradesTo": "Knight",
 		"requiredResource": "Horses",
-		"uniques": ["Can move after attacking <in tiles adjacent to [Friendly] tiles>","No defensive terrain bonus","[-33]% Strength <vs cities> <when attacking>", "Rough terrain penalty"],
+		"uniques": [
+		//"Can move after attacking <in tiles adjacent to [Friendly] tiles>",
+		"Can move after attacking",
+		"No defensive terrain bonus","[-33]% Strength <vs cities> <when attacking>",
+		"Rough terrain penalty"],
 		"promotions": [],
 		"attackSound": "horse"
 	},
