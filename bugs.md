@@ -27,7 +27,7 @@
         ]
     },
 
-
+- "Provides a [Converted village] in your first [100] cities for free <in [cityFilter] cities>", // Does not accept the conditional
 ### Forgotten and Gold costs
 - `Cost increases by [amount] per owned city does not affect purchase cost.` Maybe intentional, but might want to add it to the documentation
 - `May buy [Technology Building] buildings with [Faith] for [2] times their normal Production cost` IS affected by purchase cost

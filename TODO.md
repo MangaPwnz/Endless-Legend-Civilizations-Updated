@@ -25,7 +25,8 @@ Make giga buildings which improve yields?
 But might not be needed, since there's actually a pseudo-viable route of taking cities
 
 # Cultists
-Buff early game by giving 1 Faith / 2 pop back. Or by giving a +1 faith in capital.
+- Revert -3 happiness to -4, but give +1 extra base happiness?
+- Remove faster city razing.
 
-#
+# Forgotten
 
