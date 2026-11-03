@@ -98,3 +98,30 @@ Cultists:
     - Stockpile gain from razing cities: 3 per turn -> 2 per turn
     - Removed bonus Faith from conquering Holy Cities
     - Fanatic Converts now reduces happiness by 3
+
+## V1.1.5
+Forgotten has been overhauled. The goal is to make them less aggression and gold-focused and lean into their stealth and information theme:
+- Science to Gold conversion reworked and greatly nerfed to allow buffing the espionage theme. Previously the conversion happened in each city, giving ridiculous amount of base gold from library, population and public schools, as well as extra % gold modifiers from university and reasearch lab. This left them weak early but with high late-game gold generation. Now it happens globally at turn end, keeping the science and gold modifiers split.
+- Forgotten no longer gains extra gold from conquering cities or barbarian camps
+- Forgotten now gains 1 gold per civilization (including city-states and themselves) discovered
+- New UU, Myst. A stealthy *Scout*-type unit which replaces horseman and does not require horses. Amazing pillager
+- "Pillaging costs no movement" replaced with +100% yield from pillaging
+- No longer gains a free spy from Agriculture
+- Can build Information Brokers improvement inside enemy borders, which provides extra spies
+
+Cultists:
+- Clarify tooltip
+
+Roving Traders
+Buffs:
+- Added specialist slot for their UBs, the same as the ones they replace
+- Kassai can always move after attacking
+
+Other
+- Fix being unable to build National College in Capital due to being unable to construct
+- Rename Bardic Schools to Bardic Academy
+
+Nerfs:
+- - Each Bardic Academy (Opera House) and Network Academy (University) now increase maintenance cost of ALL other "Academy" buildings by 10%, multiplicatively (i.e. scaling exponentially)
+- Caravan School (Library) is now a pre-requisite for Network Academy
+
