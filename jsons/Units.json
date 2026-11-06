@@ -358,7 +358,9 @@
 		"upgradesTo": "Knight",
 		"requiredResource": "Horses",
 		"uniques": [
-		//"Can move after attacking <in tiles adjacent to [Friendly] tiles>",
+		//"Comment [Can move after attacking if the target is within 2 tiles of your borders]",
+		//	"Can move after attacking <within [2] tiles of a [Roving Traders]> <hidden from users>",
+		//"Can move after attacking <in [Friendly] tiles>",
 		"Can move after attacking",
 		"No defensive terrain bonus","[-33]% Strength <vs cities> <when attacking>",
 		"Rough terrain penalty"],

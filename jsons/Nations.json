@@ -574,7 +574,9 @@
 				"[+1 Gold, -1 Science] per every [1] [Science] <hidden from users> <for [Human player] Civilizations>",
 				"[+1 Gold] per every [7] [Science] <hidden from users> <for [AI player] Civilizations>",
 
-			"Comment [Technologies can be bought out with Gold]",
+			"Comment [Technologies can be bought out with Gold (unaffected by [Mercantilism] and [Big Ben])]",
+				"[Gold] cost of purchasing [Technology Building] buildings [+33]% <after adopting [Mercantilism]> <hidden from users>",
+				"[Gold] cost of purchasing [Technology Building] buildings [+17]% <if [Big Ben] is constructed> <hidden from users>",
 			//"Comment [Sources of Science gives Gold instead]",
 			//"Receive [+200]% Gold from Barbarian encampments and pillaging Cities",
 			"Gain an extra spy <upon discovering [Agriculture] technology> <for [AI player] Civilizations>",
