@@ -239,7 +239,7 @@
 // Forgotten
 	{
 		"name": "Information Brokers",
-		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Forest","Jungle","Flood plains","Barren Soil","Ash Drifts","Basalt Plains","Lava Swirl","Badlands","Scorched Wilds"],
+		"terrainsCanBeBuiltOn": ["Land"],
 		"science": 3,
 		"turnsToBuild": 5,
 		"uniqueTo": "Forgotten",
@@ -247,20 +247,21 @@
 		"uniques": [
 			//"[+1 Science] <for every [Era number]>",
 		//"Unbuildable",
-			"Pillaging this improvement yields approximately [+20 Gold]",
-			"Pillaging this improvement yields approximately [+5 Gold] <for every [Era number]>",
+			"Pillaging this improvement yields approximately [+30 Gold]",
+			//"Pillaging this improvement yields approximately [+5 Gold] <for every [Era number]>",
 			//"Instantly gain [1000] [Gold]", // Triggered uniques work! Trigger onbuild
-			"Can only be built on [{non-[Forgotten]} {non-[Great Improvement]} {Major}] tiles",
+			"Comment [Can only be built in OTHER major civilizations by units with [From the Shadows]]",
+				"Can only be built on [{non-[Forgotten]} {non-[Great Improvement]} {Major}] tiles <hidden from users>",
+			"Cannot be built on [resource] tiles",
 			//"Unbuildable <within [2] tiles of a [Information Brokers]>",
 			//"Unbuildable <within [2] tiles of a [pillaged]>",
 
-			"Cannot be built on [resource] tiles",
 			"Tile provides yield without assigned population",
-			// Spy mechanics
-				"Comment [Gain an extra spy every 1, 4, 9, 16, 25, ... [Infiltration]]",
+		// Spy mechanics
+			"Comment [Gain an extra spy every 1, 4, 9, 16, 25, ... [Infiltration]]",
 				"Instantly gain [1] [Inflitration]",
-				"Gain an extra spy <when number of [Inflitration] is more than [([spy_gain] + 1)^2 - 1]>", //TODO comment these
-				"Instantly gain [1] [spy_gain] <when number of [Inflitration] is more than [([spy_gain] + 1)^2 - 1]>",
+				"Gain an extra spy <when number of [Inflitration] is more than [([spy_gain] + 1)^2 - 1]> <hidden from users>", //TODO comment these
+				"Instantly gain [1] [spy_gain] <when number of [Inflitration] is more than [([spy_gain] + 1)^2 - 1]> <hidden from users>",
 			//"Only available <in cities with a [Library]>", Doesn't work
 			"Can be built outside your borders <hidden from users>",
 			"Unavailable <for [Worker] units> <hidden from users>",

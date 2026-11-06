@@ -88,7 +88,8 @@
 
 		{
 			"name": "From the Shadows",
-			"uniques": ["Invisible to non-adjacent units",
+			"uniques": [
+            "Invisible to non-adjacent units",
             "May enter foreign tiles without open borders",
             "Can build [Information Brokers] improvements on tiles",
             // "Comment [May build a [Smuggler's Cave] once in City-States. Gains [20 Gold] when building it.]",
