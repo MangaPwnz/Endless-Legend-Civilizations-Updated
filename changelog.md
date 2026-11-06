@@ -56,7 +56,7 @@ Add Fanatic, a UU for Cult of the Eternal End
 Reimplement the Cultist's inability to adopt the Liberty policy tree. Now it should be compatible with other mods which edit the Liberty tree.
 Fix broken icons
 Cultists:
-- nerf: 15% City strength in Converted villages
+- Nerf: 15% City strength in Converted villages
 - improve readability in the Civilopedia
 Mykara - Fungal bloom (nerfed):
 - remove production from plains (Metal Casting)
@@ -111,6 +111,7 @@ Forgotten has been overhauled. The goal is to make them less aggression and gold
 
 Cultists:
 - Clarify tooltip
+- Nerf: Now razes cities at normal speed and only gains 1 stockpile per turn
 
 Roving Traders
 Buffs:
@@ -122,6 +123,6 @@ Other
 - Rename Bardic Schools to Bardic Academy
 
 Nerfs:
-- - Each Bardic Academy (Opera House) and Network Academy (University) now increase maintenance cost of ALL other "Academy" buildings by 10%, multiplicatively (i.e. scaling exponentially)
+- Each Bardic Academy (Opera House) and Network Academy (University) now increase maintenance cost of ALL other "Academy" buildings by 10%, multiplicatively (i.e. scaling exponentially)
 - Caravan School (Library) is now a pre-requisite for Network Academy
 
