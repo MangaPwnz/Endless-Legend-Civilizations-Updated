@@ -126,3 +126,7 @@ Nerfs:
 - Each Bardic Academy (Opera House) and Network Academy (University) now increase maintenance cost of ALL other "Academy" buildings by 10%, multiplicatively (i.e. scaling exponentially)
 - Caravan School (Library) is now a pre-requisite for Network Academy
 
+## V1.1.6
+Forgotten:
+- Rebalance all the tech costs. In ancient era they're somewhat cheaper and do not increase in cost with number of cities. Late game they're considerably more expensive.
+- Mercantilism and Big Ben no longer reduces the cost of the tech buildings
