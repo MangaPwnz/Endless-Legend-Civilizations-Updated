@@ -569,9 +569,11 @@
 		"uniqueName": "Science Phobic",
 		"uniques": [
 			//"Will not be chosen for new games", //TODO remove
-			//"Comment [Converts [Science] to [Gold]]",
+			"Comment [Converts [Science] to [Gold]]",
 				//"Provides [1] [total_techno_gold] <for every [Science]> <every [1] turns>",
-				"[+1 Gold, -1 Science] per every [1] [Science]",
+				"[+1 Gold, -1 Science] per every [1] [Science] <hidden from users> <for [Human player] Civilizations>",
+				"[+1 Gold] per every [7] [Science] <hidden from users> <for [AI player] Civilizations>",
+
 			"Comment [Technologies can be bought out with Gold]",
 			//"Comment [Sources of Science gives Gold instead]",
 			//"Receive [+200]% Gold from Barbarian encampments and pillaging Cities",
