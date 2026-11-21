@@ -119,7 +119,7 @@ Buffs:
 - Kassai can always move after attacking
 
 Other
-- Fix being unable to build National College in Capital due to being unable to construct
+- Fix being unable to build National College in Capital due to being unable to construct Caravan School
 - Rename Bardic Schools to Bardic Academy
 
 Nerfs:
