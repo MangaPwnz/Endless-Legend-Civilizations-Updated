@@ -77,9 +77,9 @@
 			Tundra -> Barren Soil - 1 Food, 1 Production
 			Snow -> Lava Swirl - 1 Production, 1 Science
 			Desert -> Badlands - 2 Gold
-		
+
 		Feature - not implemented
-			Forest, Jungle, Marsh -> Scorched Wilds - 2 production 
+			Forest, Jungle, Marsh -> Scorched Wilds - 2 production
 
 	*/
 
@@ -155,7 +155,7 @@
 					"Volcanic Terrain"
 				]
 	},
-	
+
 	// Natural Wonders
 		// Fortresses - Facilities
 		// each facility should provide 2 happiness, 1 culture and 0.25 def at least
@@ -379,137 +379,137 @@
 		"weight": 10
 	},
 		// Land Natural Wonders
-		{
-			"name": "Dragon Tree",
-			"type": "NaturalWonder",
-			"food": 2,
-			"production": 2,
-			"gold": 2,
-			"science": 2,
-			"happiness": 4,
-			"occursOn": ["Grassland","Plains","Tundra","Desert","Snow"],
-			"uniques": ["Doesn't generate naturally <on water maps>"],
-			"turnsInto": "Mountain",
-			"impassable": true,
-			"unbuildable": true,
-			"weight": 10
-		},
-		{
-			"name": "Golden Tree",
-			"type": "NaturalWonder",
-			"production": 1,
-			"gold": 4,
-			"happiness": 8,
-			"occursOn": ["Grassland","Plains","Tundra","Desert","Snow"],
-			"uniques": ["Doesn't generate naturally <on water maps>"],
-			"turnsInto": "Mountain",
-			"impassable": true,
-			"unbuildable": true,
-			"weight": 10
-		},
-		{
-			"name": "Life Tree",
-			"type": "NaturalWonder",
-			"food": 3,
-			"production": 3,
-			"happiness": 4,
-			"occursOn": ["Grassland","Plains"],
-			"uniques": ["Doesn't generate naturally <on water maps>"],
-			"turnsInto": "Mountain",
-			"impassable": true,
-			"unbuildable": true,
-			"weight": 10
-		},
-		{
-			"name": "Botanical Garden",
-			"type": "NaturalWonder",
-			"food": 3,
-			"science": 3,
-			"happiness": 4,
-			"occursOn": ["Grassland","Plains"],
-			"uniques": ["Doesn't generate naturally <on water maps>"],
-			"turnsInto": "Mountain",
-			"impassable": true,
-			"unbuildable": true,
-			"weight": 10
-		},
-		{
-			"name": "Earthspine",
-			"type": "NaturalWonder",
-			"gold": 3,
-			"science": 3,
-			"happiness": 4,
-			"occursOn": ["Hill"],
-			"uniques": ["Doesn't generate naturally <on water maps>"],
-			"turnsInto": "Mountain",
-			"impassable": true,
-			"unbuildable": true,
-			"weight": 10
-		},
-		{
-			"name": "Mychordia",
-			"type": "NaturalWonder",
-			"food": 2,
-			"science": 4,
-			"happiness": 4,
-			"occursOn": ["Plains","Tundra"],
-			"uniques": ["Doesn't generate naturally <on water maps>"],
-			"turnsInto": "Mountain",
-			"impassable": true,
-			"unbuildable": true,
-			"weight": 10
-		},
-		{
-			"name": "Earth Tower",
-			"type": "NaturalWonder",
-			"production": 3,
-			"science": 3,
-			"happiness": 4,
-			"occursOn": ["Desert"],
-			"uniques": ["Doesn't generate naturally <on water maps>"],
-			"turnsInto": "Mountain",
-			"impassable": true,
-			"unbuildable": true,
-			"weight": 10
-		},
-		{
-			"name": "Wizard Stone",
-			"type": "NaturalWonder",
-			"production": 2,
-			"science": 4,
-			"happiness": 4,
-			"occursOn": ["Desert","Plains","Tundra"],
-			"uniques": ["Doesn't generate naturally <on water maps>"],
-			"turnsInto": "Mountain",
-			"impassable": true,
-			"unbuildable": true,
-			"weight": 10
-		},
-		{
-			"name": "Stasis Pillar",
-			"type": "NaturalWonder",
-			"gold": 2,
-			"science": 4,
-			"happiness": 4,
-			"occursOn": ["Snow","Tundra"],
-			"uniques": ["Doesn't generate naturally <on water maps>"],
-			"turnsInto": "Mountain",
-			"impassable": true,
-			"unbuildable": true,
-			"weight": 10
-		},
-		{
-			"name": "Weaver Worm",
-			"type": "NaturalWonder",
-			"production": 2,
-			"gold": 4,
-			"happiness": 4,
-			"occursOn": ["Snow","Tundra","Plains","Grassland"],
-			"uniques": ["Doesn't generate naturally <on water maps>"],
-			"turnsInto": "Mountain",
-			"impassable": true,
-			"unbuildable": true,
-			"weight": 10
-		}
+		// {
+		// 	"name": "Dragon Tree",
+		// 	"type": "NaturalWonder",
+		// 	"food": 2,
+		// 	"production": 2,
+		// 	"gold": 2,
+		// 	"science": 2,
+		// 	"happiness": 4,
+		// 	"occursOn": ["Grassland","Plains","Tundra","Desert","Snow"],
+		// 	"uniques": ["Doesn't generate naturally <on water maps>"],
+		// 	"turnsInto": "Mountain",
+		// 	"impassable": true,
+		// 	"unbuildable": true,
+		// 	"weight": 10
+		// },
+		// {
+		// 	"name": "Golden Tree",
+		// 	"type": "NaturalWonder",
+		// 	"production": 1,
+		// 	"gold": 4,
+		// 	"happiness": 8,
+		// 	"occursOn": ["Grassland","Plains","Tundra","Desert","Snow"],
+		// 	"uniques": ["Doesn't generate naturally <on water maps>"],
+		// 	"turnsInto": "Mountain",
+		// 	"impassable": true,
+		// 	"unbuildable": true,
+		// 	"weight": 10
+		// },
+		// {
+		// 	"name": "Life Tree",
+		// 	"type": "NaturalWonder",
+		// 	"food": 3,
+		// 	"production": 3,
+		// 	"happiness": 4,
+		// 	"occursOn": ["Grassland","Plains"],
+		// 	"uniques": ["Doesn't generate naturally <on water maps>"],
+		// 	"turnsInto": "Mountain",
+		// 	"impassable": true,
+		// 	"unbuildable": true,
+		// 	"weight": 10
+		// },
+		// {
+		// 	"name": "Botanical Garden",
+		// 	"type": "NaturalWonder",
+		// 	"food": 3,
+		// 	"science": 3,
+		// 	"happiness": 4,
+		// 	"occursOn": ["Grassland","Plains"],
+		// 	"uniques": ["Doesn't generate naturally <on water maps>"],
+		// 	"turnsInto": "Mountain",
+		// 	"impassable": true,
+		// 	"unbuildable": true,
+		// 	"weight": 10
+		// },
+		// {
+		// 	"name": "Earthspine",
+		// 	"type": "NaturalWonder",
+		// 	"gold": 3,
+		// 	"science": 3,
+		// 	"happiness": 4,
+		// 	"occursOn": ["Hill"],
+		// 	"uniques": ["Doesn't generate naturally <on water maps>"],
+		// 	"turnsInto": "Mountain",
+		// 	"impassable": true,
+		// 	"unbuildable": true,
+		// 	"weight": 10
+		// },
+		// {
+		// 	"name": "Mychordia",
+		// 	"type": "NaturalWonder",
+		// 	"food": 2,
+		// 	"science": 4,
+		// 	"happiness": 4,
+		// 	"occursOn": ["Plains","Tundra"],
+		// 	"uniques": ["Doesn't generate naturally <on water maps>"],
+		// 	"turnsInto": "Mountain",
+		// 	"impassable": true,
+		// 	"unbuildable": true,
+		// 	"weight": 10
+		// },
+		// {
+		// 	"name": "Earth Tower",
+		// 	"type": "NaturalWonder",
+		// 	"production": 3,
+		// 	"science": 3,
+		// 	"happiness": 4,
+		// 	"occursOn": ["Desert"],
+		// 	"uniques": ["Doesn't generate naturally <on water maps>"],
+		// 	"turnsInto": "Mountain",
+		// 	"impassable": true,
+		// 	"unbuildable": true,
+		// 	"weight": 10
+		// },
+		// {
+		// 	"name": "Wizard Stone",
+		// 	"type": "NaturalWonder",
+		// 	"production": 2,
+		// 	"science": 4,
+		// 	"happiness": 4,
+		// 	"occursOn": ["Desert","Plains","Tundra"],
+		// 	"uniques": ["Doesn't generate naturally <on water maps>"],
+		// 	"turnsInto": "Mountain",
+		// 	"impassable": true,
+		// 	"unbuildable": true,
+		// 	"weight": 10
+		// },
+		// {
+		// 	"name": "Stasis Pillar",
+		// 	"type": "NaturalWonder",
+		// 	"gold": 2,
+		// 	"science": 4,
+		// 	"happiness": 4,
+		// 	"occursOn": ["Snow","Tundra"],
+		// 	"uniques": ["Doesn't generate naturally <on water maps>"],
+		// 	"turnsInto": "Mountain",
+		// 	"impassable": true,
+		// 	"unbuildable": true,
+		// 	"weight": 10
+		// },
+		// {
+		// 	"name": "Weaver Worm",
+		// 	"type": "NaturalWonder",
+		// 	"production": 2,
+		// 	"gold": 4,
+		// 	"happiness": 4,
+		// 	"occursOn": ["Snow","Tundra","Plains","Grassland"],
+		// 	"uniques": ["Doesn't generate naturally <on water maps>"],
+		// 	"turnsInto": "Mountain",
+		// 	"impassable": true,
+		// 	"unbuildable": true,
+		// 	"weight": 10
+		// }
 
 ]
